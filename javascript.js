@@ -17,3 +17,10 @@ const columns = document.querySelectorAll('.column');
 columns.forEach((column) => {
     create16Divs(column, 'box')
 });
+
+const boxes = document.querySelectorAll('.box');
+boxes.forEach((box) => {
+    box.addEventListener('mouseover', () => {
+        box.setAttribute('style', 'background-color: white');
+    })
+})
