@@ -24,3 +24,10 @@ boxes.forEach((box) => {
         box.setAttribute('style', 'background-color: black');
     })
 })
+
+const resetButton = document.querySelector(".reset");
+resetButton.addEventListener('click', () => {
+    boxes.forEach((box) => {
+        box.setAttribute('style', 'background-color: white');
+    })
+})
