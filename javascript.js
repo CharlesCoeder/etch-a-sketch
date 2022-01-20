@@ -21,6 +21,6 @@ columns.forEach((column) => {
 const boxes = document.querySelectorAll('.box');
 boxes.forEach((box) => {
     box.addEventListener('mouseover', () => {
-        box.setAttribute('style', 'background-color: white');
+        box.setAttribute('style', 'background-color: black');
     })
 })
