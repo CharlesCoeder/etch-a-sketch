@@ -36,7 +36,10 @@ resetButton.addEventListener('click', () => {
 
 const gridSizeButton = document.querySelector('.gridsize');
 gridSizeButton.addEventListener('click', () => {
-    const length = prompt('New grid size');
+    let length = prompt('New grid size');
+    while (length > 100){
+        length = prompt('Number cannot be larger than 100!');
+    }
     removeAllChildNodes(grid);
     createGrid(length, grid);
     addGridListener();
