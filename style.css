@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     border: 10px solid grey;
-    width: 800px;
+    flex-wrap: wrap;
 }
 
 .column {

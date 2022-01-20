@@ -28,6 +28,7 @@ function addGridListener(){
 
 const resetButton = document.querySelector(".reset");
 resetButton.addEventListener('click', () => {
+    boxes = document.querySelectorAll('.box');
     boxes.forEach((box) => {
         box.setAttribute('style', 'background-color: white');
     })
